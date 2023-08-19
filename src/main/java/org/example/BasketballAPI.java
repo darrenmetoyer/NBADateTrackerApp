@@ -74,7 +74,7 @@ public class BasketballAPI {
     public static String getData(String url)  throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
-                .header("X-RapidAPI-Key", "b75925fb5fmsh9a753a8efb75425p11276bjsn6b0c934a1853")
+                .header("X-RapidAPI-Key", // API Key --> "")
                 .header("X-RapidAPI-Host", "basketapi1.p.rapidapi.com")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
